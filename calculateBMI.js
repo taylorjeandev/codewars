@@ -10,7 +10,7 @@
 
 function bmi(weight, height) {
   function bmi(weight, height) {
-    let total = weight / (height * 2);
+    let total = weight / Math.pow(height, 2);
     if (total <= 18.5) {
       return "Underweight";
     } else if (total <= 25) {
