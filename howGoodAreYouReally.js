@@ -10,8 +10,7 @@
 
 function betterThanAverage(classPoints, yourPoints) {
   classPoints.push(yourPoints);
-  let sum = classPoints.reduce((acc, c) => acc + c, 0);
-  let average = sum / classPoints.length;
+  let average = classPoints.reduce((acc, c) => acc + c, 0) / classPoints.length;
   return yourPoints >= average ? true : false;
 }
 
