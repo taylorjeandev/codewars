@@ -13,7 +13,7 @@
 // 1 Can you write a solution that will return null2 for both [] and [ x ] though? (This is an empty array and one with a single number and is not tested for, but you can write your own example test. )
 
 function nonConsec (arr){
-    for(let i=1; i < arr.length; i++){
+    for(let i=0; i < arr.length - 1; i++){
         if (arr[i] + 1 !== arr[i + 1]){
             return arr[i + 1];
         }
