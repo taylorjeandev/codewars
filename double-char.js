@@ -6,9 +6,9 @@
 // * "1234!_ "     -> "11223344!!__  "
 // Good Luck!
 
-function doubleChar(str) {
-    return str.replace(/./g, '$&$&');
-}
+    function doubleChar(str) {
+        return str.replace(/./g, '$&$&');
+    }
 
 
 // Test.assertEquals(doubleChar("abcd"), "aabbccdd");
