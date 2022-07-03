@@ -5,7 +5,7 @@
 // "john McClane" --> "McClane john"
 
 function nameShuffler(str){
-    str.split(" ").reverse().join(" ")
+    return  str.split(" ").reverse().join(" ")
 }
 
 // Test.assertEquals(nameShuffler('john McClane'),'McClane john');
