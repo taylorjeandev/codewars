@@ -9,11 +9,12 @@
 // Go on and code some pure awesomeness!
 
 function nextId(ids){
-    let x = 0;
-    while (ids.includes(x)) x++;
+    let x = 0
+    while(ids.includes(x)) x++;
     return x;
-  }
+}
 // Test.assertEquals(nextId([0,1,2,3,5]), 4);
 // });
 // it('returns the lowestNextId', function() {
 //   Test.assertEquals(nextId([0,1,2,3,4,5,6,7,8,9,10]), 11);
+
