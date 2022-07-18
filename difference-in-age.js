@@ -7,7 +7,7 @@ function differenceInAges(ages){
     let result = [];
     result.push(ages[0], ages[ages.length - 1], ages[ages.length - 1] - ages[0])
     return result;
-  }
+}
 
 // Test.assertSimilar(differenceInAges([82, 15, 6, 38, 35]), [6, 82, 76]);
 // Test.assertSimilar(differenceInAges([57, 99, 14, 32]), [14, 99, 85]);
