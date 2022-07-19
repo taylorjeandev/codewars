@@ -9,11 +9,12 @@ class God{
      * @returns Human[]
      */
       static create(){
-        // code
-      }
+       return [new Man, new Woman]
     }
-    // code
-
+  }
+  class Human {}
+  class Man extends Human {}
+  class Woman extends Human {}
 
     // let humans = God.create()
     // Test.assertEquals(humans[0] instanceof Man, true, 'Expected Adam to be a Man');
