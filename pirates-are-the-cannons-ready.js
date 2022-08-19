@@ -23,8 +23,18 @@
 // Also, check out the new Pirates!! Kata: https://www.codewars.com/kata/57e2d5f473aa6a476b0000fe
 
 const cannonsReady = (gunners) => {
-    
+    for (var i in gunners) {
+        if (gunners[i] == "nay") {
+          return "Shiver me timbers!"
+        }
+    }
+  return "Fire!"
 }
+
+//P: an array of strings.
+//R: 'Fire' if 4 'ayes', 'Shiver me timbers' if 1 'nay'
+//E: 
+//P:
 
 // const assert = require('chai').assert;
 
