@@ -24,7 +24,7 @@
 
 // volume = 1150
 
-const iceBrickVolume = (r, x, y) => 2 * r * r * (x - y);
+const iceBrickVolume = (r, x, y) => 2 * r * r * (x - y);wor
 
 // assert.strictEqual(iceBrickVolume(1, 10, 2), 16, "radius = 1, bottleLength = 10, rimLength = 2");
 // assert.strictEqual(iceBrickVolume(5, 30, 7), 1150, "radius = 5, bottleLength = 30, rimLength = 7");
