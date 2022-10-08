@@ -32,5 +32,5 @@
 // Good luck! Check back tomorrow for the next challenge of the week!
 
 function checkEquality(arr1, arr2) {
-    arr1.flat()
+    
 }
