@@ -7,13 +7,7 @@
 // array = [1, 2, 3, 4] and N = 2, then the result is 3^2 == 9;
 // array = [1, 2, 3] and N = 3, but N is outside of the array, so the result is -1.
 
-function index(array, n) {
-  if (n > array.length - 1) {
-    return -1;
-  } else {
-    return Math.pow(array[n], n);
-  }
-}
+const index = (array, n) => (n > array.length - 1 ? -1 : Math.pow(array[n], n));
 
 // array of numbers with only positive integers, and a non-negative number N
 // Return a number that is n to the power of the indexed value of the number n
