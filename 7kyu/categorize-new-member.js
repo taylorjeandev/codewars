@@ -13,7 +13,9 @@
 // output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 
 function openOrSenior(data) {
-  data.map(([age, handicap]) => (age > 54 && handicap > 7 ? "Senior" : "Open"));
+  return data.map(([age, handicap]) =>
+    age > 54 && handicap > 7 ? "Senior" : "Open"
+  );
 }
 
 //   describe("Basic tests", () => {
