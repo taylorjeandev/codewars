@@ -20,4 +20,4 @@ menu.innerHTML = dinnerFoods
   .map((food) => {
     return `<div class="food">${food}</div>`;
   })
-  .join("");
+  .join(""); // remove the commas between the food divs;
