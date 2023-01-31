@@ -8,10 +8,20 @@
 
 // patrick feeney => P.F
 
-function abbrevName(name) {
-  name = name.toUpperCase().split(" ");
-  return `${name[0][0]}.${name[1][0]}`;
-}
+// function abbrevName(name) {
+//   name = name.toUpperCase().split(" ");
+//   return `${name[0][0]}.${name[1][0]}`;
+// }
 
-console.log(abbrevName("Sam Harris"));
-console.log(abbrevName("Patrick Feenan"));
+// console.log(abbrevName("Sam Harris"));
+// console.log(abbrevName("Patrick Feenan"));
+
+
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log(JSON.stringify(json)))
+
+const arr = ["John", "Peter", "Sally", "Jane"];
+const myJSON = JSON.stringify(arr);
+
+console.log(myJSON)
