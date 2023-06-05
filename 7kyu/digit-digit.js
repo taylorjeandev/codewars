@@ -9,10 +9,11 @@
 // Happy Coding!
 
 function squareDigits(num) {
-    return num.toString()
+    num = num.toString()
         .split("")
         .map((num) => parseInt(num) * num)
         .join("")
+    return parseInt(num)
 }
 
 
