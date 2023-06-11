@@ -5,7 +5,9 @@
 // [10, 343445353, 3453445, 3453545353453] should return 3453455.
 
 function sumTwoSmallestNumbers(numbers) {
-    numers = numbers.sort();
+    numbers = numbers.sort((a, b) => a - b);
+
+    return numbers[0] + numbers[1]
 }
 
 console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]), 13, "Sum should be 13");

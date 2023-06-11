@@ -8,9 +8,10 @@
 
 function accum(s) {
     s = s.split("")
-        .map((letter) => {
-
+        .map((letter, index) => {
+            return letter.toUpperCase() + letter.repeat(index).toLowerCase()
         })
+        .join("-")
 
     return s;
 
