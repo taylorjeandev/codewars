@@ -1,9 +1,18 @@
-// You get an array of numbers, return the sum of all of the positives ones.
-
-// Example [1,-4,7,12] => 1 + 7 + 12 = 20
-
-// Note: if there is nothing to sum, the sum is default to 0.
-
 function positiveSum(arr) {
-  return arr.filter((el) => el > 0).reduce((acc, c) => acc + c, 0);
+    arr = arr.sort((a, b) => a - b)
+    return arr.reduce((acc, c) => c > 0 ? Number(acc + c) : acc + 0, 0)
 }
+
+// let arr = arr.reduce((acc, c) =>{
+//     if(acc > 0){
+//         return acc + c
+//     }
+//     return arr
+//   })
+
+console.log(positiveSum([-1, -5, 0, 2, 3, 4, 5]), 14);
+console.log(positiveSum([1, 2, 3, 4, 5]), 15);
+console.log(positiveSum([1, -2, 3, 4, 5]), 13);
+console.log(positiveSum([]), 0);
+console.log(positiveSum([-1, -2, -3, -4, -5]), 0);
+console.log(positiveSum([-1, 2, 3, 4, -5]), 9);
